@@ -1,7 +1,0 @@
-
-.full-img{
-  background-image:url(AdobeStock_59829158_Preview.png); /* 画像のURLを指定       */
-  background-size:contain;                 /* 画像のサイズを指定    */
-  width:100%;                              /* 横幅のサイズを指定    */
-  height:400px;                            /* 縦幅のサイズを指定    */
-}

@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+/* inputタグ等のフォント変更*/
+input, textarea {
+  font-family: serif;
+}
+
+/*ハイパーリンクの装飾を消す*/
 a {
   text-decoration: none;
   }
@@ -16,7 +22,7 @@ a {
 .store-name{
   font-family: HG正楷書体-PRO;
   font-size: 24px;
-  margin-right: 30px;
+  margin: 20px;
 }
 
 .menu {
@@ -28,6 +34,14 @@ a {
   margin-left: 10px;
 }
 
+/* デフォルトでは非表示のメニューアイコン*/
+.menu-icon {
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display:none !important; 
+}
+
 .top-container {
   margin: 0 auto;
   background-image: url(AdobeStock_199226712@2x.png);
@@ -35,45 +49,82 @@ a {
   width:70%;                              /* 横幅のサイズを指定    */
   height:741px;                            /* 縦幅のサイズを指定    */
   background-repeat: no-repeat;
+
 }
 
 .top-container h2 {
+  font-family: HG行書体;
+  font-size: 36px;
   margin:200px 0 0 200px;
   display: inline-block;
+}
+
+.middle-wrapper h2{
+  font-weight: normal;
+  text-align: center;
+  font-family: serif;
 }
 
 .middle-container {
   width: 70%;
   margin: 0 auto;
+  padding-top: 20px;
   display: flex;
+  justify-content: space-around;
+  background-color: #FCFCFC;
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  font-size: 16px;
 }
 
-.item1 {
-  background-image: url(AdobeStock_59829158_Preview.png);
-  flex: row;
-  width:33.3%;
-  height: 387px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center center;
+.middle-box1, .middle-box2, .middle-box3 {
+  width: 30%;
+  position: relative;
 }
 
-.item2 {
-  background-image: url(AdobeStock_74141361.png);
-  flex: row;
-  width:33.3%;
-  height: 387px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center center;
+.middle-box1 img, .middle-box2 img, .middle-box3 img {
+  width: 100%;
 }
 
-.item3 {
-  background-image: url(AdobeStock_221963447.png);
-  flex: row;
-  width:33.4%;
-  height: 387px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center center;
+.middle-box1 p, .middle-box2 p, .middle-box3 p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.contact-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: serif;
+  background-color: #FCFCFC;
+  padding-top: 20px;
+  border-top: 2px solid #999999;
+}
+
+.contact-container h2 {
+  margin-top: 20px;
+  font-family: serif;
+  font-weight: normal;
+}
+
+.footer-container {
+  width: 70%;
+  background-color: #999999;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.store-name2 {
+  font-family: HG正楷書体-PRO;
+  font-size: 24px;
+  margin-right: 30px;
+}
+
+.footer-container a {
+  margin: 25px 20px;
+  color: white;
 }
