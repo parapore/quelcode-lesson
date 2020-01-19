@@ -15,24 +15,30 @@
   <header>
     <div class="header-container">
       <p class="store-name">犬塚家具</p>
-
-      <span class="fas fa-bars menu-icon"></span>
-
+      <div id="menu">
+        <div><a href="#menu" class="menuopen"><img src="sozai_cman_jp_20200119161916.png" alt=""></a><a href="#close"
+            class="menuclose"><img src="sozai_cman_jp_20200119162006.png" alt=""></a></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#Product">Product</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
       <div class="menu">
         <a href="#">Home</a>
-        <a href="#">News</a>
-        <a href="#">Q&A</a>
+        <a href="#Product">Product</a>
+        <a href="#Contact">Contact</a>
       </div>
-
     </div>
   </header>
+
   <div class="top-wrapper">
     <div class="top-container">
       <h2>犬と戯れる<br>くつろぎのハウス</h2>
     </div>
   </div>
   <div class="middle-wrapper">
-    <h2>Product</h2>
+    <h2 id="Product"> Product</h2>
     <div class="middle-container">
       <div class="middle-box1">
         <a href="#"><img src="AdobeStock_59829158_Preview.png" alt=""></a>
@@ -48,9 +54,14 @@
       </div>
     </div>
   </div>
+
   <div class="contact-container">
+    <div id="event-test">
+      <div><a class="event-open" href="#event-test">●</a>
+        <a class="event-close" href="#event-close"><img src="kitten-asleep-in-a-pot-1995961_640.jpg" alt=""></a></div>
+    </div>
     <form action="#" method="POST">
-      <h2>お問い合わせ</h2>
+      <h2 id="Contact">お問い合わせ</h2>
       <p>名前<br>
         <input type="text" name="name" size="40">
       </p>
@@ -67,8 +78,8 @@
     <div class="footer-container">
       <p class="store-name2">犬塚家具</p>
       <a href="#">Home</a>
-      <a href="#">News</a>
-      <a href="#">Q&A</a>
+      <a href="#Product">Product</a>
+      <a href="#Contact">Contact</a>
     </div>
   </footer>
 </body>

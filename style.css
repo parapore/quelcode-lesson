@@ -32,24 +32,21 @@ a {
 
 .menu a {
   margin-left: 10px;
+  color: black;
 }
 
-/* デフォルトでは非表示のメニューアイコン*/
-.menu-icon {
-  font-size: 25px;
-  padding: 21px 0;
-  /* displayをnoneに指定してください */
-  display:none !important; 
+/* デフォルトでは非表示のスマホ用メニュー*/
+#menu {
+  display: none;
 }
 
 .top-container {
   margin: 0 auto;
   background-image: url(AdobeStock_199226712@2x.png);
-  background-size:cover;                 /* 画像のサイズを指定    */
-  width:70%;                              /* 横幅のサイズを指定    */
-  height:741px;                            /* 縦幅のサイズを指定    */
+  background-size:cover;
+  width:70%;
+  height:741px;
   background-repeat: no-repeat;
-
 }
 
 .top-container h2 {
@@ -74,8 +71,7 @@ a {
   background-color: #FCFCFC;
   text-align: center;
   font-family: serif;
-  font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .middle-box1, .middle-box2, .middle-box3 {
@@ -128,3 +124,28 @@ a {
   margin: 25px 20px;
   color: white;
 }
+
+#event-test {
+  display: block;
+  pointer-events: none; /*親要素でイベント(aタグのリンクを踏むこと)を受け取らない*/
+}
+
+#event-test .event-open {
+  color: blue;
+  display: block;
+  pointer-events: auto; /*子要素でイベントを受け取り*/
+}
+
+#event-test .event-close {
+  display: none;
+  pointer-events: auto; /*子要素でイベントを受け取り*/
+}
+
+  /****イベントオープン時****/
+  #event-test:target .event-open {
+    display: none;
+  }
+  
+  #event-test:target .event-close{
+    display: block;
+  }
