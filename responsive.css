@@ -5,7 +5,7 @@
 
   .top-container {
     width: 100%;
-    background-image: url(tablet-top.png);
+    background-image: url(photo/tablet-top.png);
   }
 
   .top-container h2 {
@@ -99,7 +99,7 @@
 
   .top-container {
     margin: 0 auto;
-    background-image: url(phone-top.png);
+    background-image: url(photo/phone-top.png);
     background-size:cover;
     width: 100%;
     height:741px;
