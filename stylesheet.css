@@ -1,0 +1,413 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*共通要素*/
+body {
+	width: 1280px;
+	background-color: #FCFCFC;
+	margin: 30px auto 0 auto;
+	border: 1px solid  rgba(80, 80, 80, 0.1);
+}
+
+header {
+	height: 60px;
+}
+
+.header-container {
+	display: flex;
+	
+	/* ヘッダー固定。positionは高さ無くなるから親要素で高さ指定 */
+	position: fixed;
+}
+
+.header-container h1 {
+  margin: 15px 0 0 88px;
+  width: 62px;
+  height: 35px;
+  text-align: center;
+  font: 600 16px/16px Gill Sans;
+  letter-spacing: 0;
+  color: #918F89;
+  opacity: 1;
+}
+
+.header-container a {
+  text-align: left;
+  font:200 16px/22px Noto Sans;
+  letter-spacing: 0;
+  color: #272727;
+}
+
+.about {
+  width: 43px;
+  height: 32px;
+  margin: 28px 107px 10px 705px;
+  opacity: 1;
+  border-bottom: 2px solid #3E3E3E;
+}
+
+.news {
+  width: 38px;
+  height: 22px;
+  margin: 25px 114px 10px 0;
+  opacity: 0.5;
+}
+
+.question {
+  width: 33px;
+  height: 22px;
+  margin: 25px 90px 10px 0;
+  opacity: 0.5;
+}
+
+.top-container {
+  height: 741px;
+  background: transparent url(AdobeStock_199226712.png);
+  opacity: 1;
+}
+
+.top-box {
+	top: 264px;
+  width: 702px;
+  height: 136px;
+  margin: 264px 578px 341px 0;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.top-box h2 {
+	margin:31px 95px 23px 88px;
+  width: 519px;
+	height: 82px;
+	font: 100 60px/82px Noto Sans JP;
+	letter-spacing: 3px;
+	color: #918F89;
+	opacity: 1;
+}
+
+.top-phone h2 {
+	display: none;
+}
+
+.life-wrapper {
+ display: flex;
+}
+
+.life-wrapper img {
+	margin: 202px 70px 210px 88px;
+	width: 544px;
+	height: 500px;
+	opacity: 1;
+}
+
+.life-container h2 {
+	margin: 343px 40px 0 0;
+	width: 474px;
+	height: 29px;
+	text-align: left;
+	font: 300 25px/53px DNPShueiMinPr6;
+	letter-spacing: 2.5px;
+	color: #3B3B3B;
+	opacity: 1;
+}
+
+.life-container .life-p {
+	margin-top: 40px;
+	width: 474px;
+	height: 138px;
+	text-align: left;
+	font: 300 12px/30px DNP ShueiGoKinStd;
+	letter-spacing: 0.36px;
+	color: #3B3B3B;
+	opacity: 1;
+}
+
+.life-container .life-phone-p {
+	display: none;
+}
+
+.style-wrapper h2 {
+	margin: 0 0 40px 543px;
+	width: 194px;
+	height: 29px;
+	text-align: left;
+	font: 300 25px/53px DNPShueiMinPr6;
+	letter-spacing: 2.5px;
+	color: #3B3B3B;
+	opacity: 1;
+}
+
+.style-wrapper img {
+	width: 964px;
+	height: 503px;
+	margin-left: 158px;
+}
+
+.style-wrapper p .s1{
+	display: inline-block;
+	margin: 30px 0 0 627px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: rgba(165,165,165, 0.3);
+}
+
+.style-wrapper p .s2{
+	display: inline-block;
+	margin: 30px 0 0 4px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: rgba(165,165,165, 1.0);
+}
+
+.style-wrapper p .s3{
+	display: inline-block;
+	margin: 30px 0 0 4px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: rgba(165,165,165, 0.3);
+}
+
+.news-container h2 {
+	margin-top:210px;
+	text-align: center;
+	font: 200 25px/53px Noto Sans;
+	letter-spacing: 2.5px;
+	color: #3B3B3B;
+	opacity: 1;
+}
+
+.product {
+	display: flex;
+}
+
+.product img {
+	width: 334px;
+	height: 387px;
+	border: 0.800000011920929px solid #70707046;
+}
+
+.img1 {
+	height: 387px;
+	margin: 50px 0 0 89px;
+	position: relative;
+}
+
+.img2, .img3 {
+	height: 387px;
+	margin: 50px 0 0 50px;
+	position: relative;
+}
+
+.caption1, .caption2, .caption3{
+	text-align: center;
+	font: 300 16px/387px DNP ShueiGoKinStd;
+	letter-spacing: 0.36px;
+	color:white;
+	opacity: 1;
+	display: none; /* ホバーするまで非表示 */
+}
+
+ .mask1, .mask2, .mask3 {
+	text-align: center;
+	width: 100%;
+	height: 0%; /* ホバーするまで背景画像を消す */
+	position: absolute;
+	top: 387px; /* 下からせり上げる仕掛け */
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	-webkit-transition: all 0.6s ease;
+	-moz-transition:  all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.img1:hover .mask1 {
+	top: 0; /* topから387px→0pxで下からせり上がる */
+	height: 100%; /* ホバーで背景画像を表示 */
+}
+
+.img2:hover .mask2 {
+	top: 0; /* ホバーで下からせり上がる */
+	height: 100%; /* ホバーで背景画像を表示 */
+}
+
+.img3:hover .mask3 {
+	top: 0; /* ホバーで下からせり上がる */
+	height: 100%; /* ホバーで背景画像を表示 */
+}
+
+.img1:hover .caption1 {
+	display: block; /* ホバーでテキスト表示 */
+}
+
+.img2:hover .caption2 {
+	display: block; /* ホバーでテキスト表示 */
+}
+
+.img3:hover .caption3 {
+	display: block; /* ホバーでテキスト表示 */
+}
+
+.news-container p {
+	margin:50px 0 0 590px;
+	text-align: center;
+	width: 112px;
+	height: 22px;
+	font: 200 21px/53px Noto Sans JP;
+	letter-spacing: 1.05px;
+	color: #3B3B3B;
+	opacity: 1;
+}
+
+.contact-container {
+	margin: 210px auto 0 auto;
+	text-align: center;
+}
+
+.contact-container h2 {
+	font: 200 25px/53px Noto Sans;
+	letter-spacing: 2.5px;
+	color: #3B3B3B;
+	opacity: 1;
+}
+
+input[type="text"] {
+	margin:60px 408px 0 409px;
+	width: 463px;
+	height: 35px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 0.5px solid #707070;
+	border-radius: 11px;
+	opacity: 0.6;
+}
+
+input[value] {
+	text-align: left;
+	font: 300 12px/53px DNPShueiMinPr6;
+	letter-spacing: 0.6px;
+	color: #3B3B3B;
+	opacity: 0.4;
+}
+
+input[value="お名前"] {
+	padding-left: 17px;
+}
+
+input[value="メールアドレス"] {
+	padding-left: 20px;
+}
+
+textarea {
+	margin: 30px 408px 0 409px;
+	width: 463px;
+	height: 156px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 0.5px solid #707070;
+	border-radius: 11px;
+	opacity: 0.6;
+	text-align: left;
+	font: 300 12px/53px DNPShueiMinPr6;
+	letter-spacing: 0.6px;
+	color: #3B3B3B;
+	opacity: 0.4;
+	padding-left: 17px;
+}
+
+input[type="submit"] {
+	margin:60px auto 0 auto;
+	border-radius: 20px;
+	width: 111px;
+	height: 35px;
+	background: #D1D1D1 0% 0% no-repeat padding-box;
+	opacity: 1;
+
+/* 送信のfont */
+	text-align: center;
+
+/* line-heightを高さと合わせると垂直中央ぞろえになる */
+	font: 700 15px/35px DNPShueiMinPr6;
+	letter-spacing: 0.75px;
+	color: #707070;
+	opacity: 1;
+}
+
+/* アセットの高さ指定が　284ｐｘと　416ｐｘの２つある？ 後で確認 */
+footer {
+	margin-top: 221px;
+	width: 1280px;
+	height: 284px;
+	background: #918F89 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.footer-menu {
+	display: flex;
+}
+
+footer h2 {
+	margin: 116px 422px 50px 227px;
+	width: 77px;
+	height: 48px;
+	text-align: center;
+	font: 600 22px/21px Gill Sans;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.footer-link {
+	margin-top: 136px;
+	margin-bottom: 75px;
+}
+
+.footer-link a {
+	text-align: left;
+	font: 200 18px/24px Noto Sans;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	opacity: 1;
+	}
+
+
+.footer-about {
+	margin: 0 102px 0 0;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	width: 48px;
+	height: 24px;
+}
+
+.footer-news {
+	margin: 0 103px 0 0;
+	width: 43px;
+	height: 24px;
+}
+
+.footer-question {
+	width: 37px;
+	height: 24px;
+}
+
+footer p {
+	margin: 0 599px 40px 599px;
+	width: 82px;
+	height: 9px;
+	text-align: center;
+	font: 200 10px/16px Gill Sans;
+	letter-spacing: 0.4px;
+	color: #FFFFFF;
+	opacity: 1;
+}

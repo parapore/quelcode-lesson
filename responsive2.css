@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+@media(max-width:480px) {
+
+  /*共通要素*/
+  body {
+    width: 375px;
+	background: #FFFFFF;
+  }
+
+  header {
+    height: 55px;
+  }
+
+  .header-container {
+    background: #918F89;
+    opacity: 1;
+    position: static; /*position: fixedの解除 */
+  }
+
+  .header-container h1 {
+    text-align: center;
+font: 600 16px/16px Gill Sans;
+letter-spacing: 0;
+color: #FFFFFF;
+opacity: 1;
+  }
+
+  .about, .news, .question {
+    display: none;
+  }
+
+  #humberger {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  #humberger div {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 24px;
+    background-color: #444;
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  #humberger div:nth-of-type(1) {
+    top: 0;
+  }
+  #humberger div:nth-of-type(2) {
+    top: 10px;
+  }
+  #humberger div:nth-of-type(3) {
+    bottom: 0;
+  }
+
+  .top-container {
+  height: 647px;
+  background: transparent url(suAdobeStock_1992267122.png);
+  opacity: 1;
+  }
+
+  .top-box {
+
+
+    width: 136px;
+    height: 77px;
+    margin: 148px 0 0 0;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+  }
+
+  .top-box2 {
+
+    width: 228px;
+    height: 77px;
+    margin-top: 12px;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+  }
+
+  .top-box3 {
+
+    width: 173px;
+    height: 77px;
+    margin-top: 12px;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+  }
+
+  .top-box h2 {
+    display: none;
+  }
+
+   .top-phone h2 {
+    display: block;
+    position: absolute;
+    top: 215px;
+    left: 54px;
+    width: 167px;
+    height: 227px;
+    font: 100 39px/87px Noto Sans;
+    letter-spacing: 1.95px;
+    color: #3B3B3B;
+    opacity: 1;
+  }
+
+  .life-wrapper {
+    display: block; /*display: flex;の解除 */
+   }
+
+   .life-wrapper img {
+    display: none;
+  }
+
+  .life-container h2 {
+    margin: 66px 55px 36px 71px;
+    width: 249px;
+height: 29px;
+text-align: left;
+font: 300 25px/53px DNPShueiMinPr6;
+letter-spacing: 2.5px;
+color: #3B3B3B;
+opacity: 1;
+  }
+  
+  .life-container .life-p {
+    display: none;
+  }
+  
+  .life-container .life-phone-p {
+    display: block;
+
+    width: 358px;
+height: 224px;
+text-align: center;
+font: 300 14px/35px DNP ShueiGoKinStd;
+letter-spacing: 0.42px;
+color: #3B3B3B;
+opacity: 1;
+  }
+}
+

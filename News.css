@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*共通要素*/
+body {
+	width: 1280px;
+	background-color: #FCFCFC;
+	margin: 30px auto 0 auto;
+	border: 1px solid  rgba(80, 80, 80, 0.1);
+}
+
+header {
+	height: 60px;
+}
+
+.header-container {
+  display: flex;
+  
+	/* ヘッダー固定。positionは高さ無くなるから親要素で高さ指定 */
+	position: fixed;
+}
+
+.header-container h1 {
+  margin: 15px 0 0 88px;
+  width: 62px;
+  height: 35px;
+  text-align: center;
+  font: 600 16px/16px Gill Sans;
+  letter-spacing: 0;
+  color: #918F89;
+  opacity: 1;
+}
+
+.header-container a {
+  text-align: left;
+  font:200 16px/22px Noto Sans;
+  letter-spacing: 0;
+  color: #272727;
+}
+
+.about {
+  width: 43px;
+  height: 22px;
+  margin: 28px 107px 10px 705px;
+  opacity: 0.5;
+  
+}
+
+.news {
+  width: 38px;
+  height: 35px;
+  margin: 25px 114px 10px 0;
+  opacity: 1;
+  border-bottom: 2px solid #3E3E3E;
+}
+
+.question {
+  width: 33px;
+  height: 22px;
+  margin: 25px 90px 10px 0;
+  opacity: 0.5;
+}
+
+.top-container {
+  height: 415px;
+  background: transparent url(AdobeStock_295587079.png);
+  opacity: 1;
+}
+
+.top-container h2 {
+	padding: 186px 947px 200px 237px;
+  width: 96px;
+  height: 29px;
+  font: 200 30px/53px Noto Sans;
+  letter-spacing: 3px;
+  color: #3B3B3B;
+}
+
+.life-container {
+	text-align: center;
+	margin-bottom: 283px;
+}
+
+.life-container h2 {
+  margin:96px 0 70px 0;
+  font: 300 21px/53px DNPShueiMinPr6;
+  letter-spacing: 2.1px;
+  color: #3B3B3B;
+  opacity: 1;
+}
+
+.product img {
+	width: 334px;
+  height: 387px;
+}
+
+.product .red{
+	margin: 0 50px 0 50px;
+}
+
+
+
+footer {
+	margin-top: 221px;
+	width: 1280px;
+	height: 321px;
+	background: #918F89 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.footer-menu {
+	display: flex;
+}
+
+footer h2 {
+	margin: 116px 422px 50px 227px;
+	width: 77px;
+	height: 48px;
+	text-align: center;
+	font: 600 22px/21px Gill Sans;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.footer-link {
+	margin-top: 140px;
+	margin-bottom: 100px;
+}
+
+.footer-link a {
+	text-align: left;
+	font: 400 14px/19px Noto Sans;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	opacity: 1;
+	}
+
+
+.footer-about {
+	margin: 0 110px 0 0;
+	width: 40px;
+	height: 19px;
+}
+
+.footer-news {
+	margin: 0 110px 0 0;
+	width: 36px;
+	height: 19px;
+}
+
+.footer-question {
+	width: 30px;
+	height: 19px;
+}
+
+footer p {
+	margin:0 auto 53px auto;
+	width: 82px;
+	height: 9px;
+	font: 300 10px/16px Gill Sans;
+	letter-spacing: 0.4px;
+	color: #FFFFFF;
+	opacity: 1;
+}
