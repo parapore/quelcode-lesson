@@ -1,7 +1,10 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
 
+/*paddingとborderを幅と高さに含める*/
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -113,14 +116,12 @@ opacity: 1;
 }
 
 .query-list {
-  width: 474px;
-height: 587px;
-margin: 0 auto;
+  
 }
 
 .query1 {
-  width: 267px;
-  height: 19px;
+
+
   text-align: left;
   font: 300 16px/53px DNPShueiMinPr6;
   letter-spacing: 1.6px;
@@ -166,14 +167,15 @@ opacity: 1;
 
 
 footer {
-	margin-top: 86px;
+	/*margin-top: 86px;*/
 	height: 321px;
 	background: #918F89 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
 
 .footer-menu {
-	display: flex;
+  display: flex;
+  background: #918F89 0% 0% no-repeat padding-box;
 }
 
 footer h2 {

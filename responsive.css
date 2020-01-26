@@ -1,0 +1,150 @@
+@media(max-width:1024px) {
+  .header-container {
+    width: 100%;
+  }
+
+  .top-container {
+    width: 100%;
+    background-image: url(photo/tablet-top.png);
+  }
+
+  .top-container h2 {
+    margin:150px 0 0 50px;
+  }
+
+  .middle-container {
+    width: 100%;
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+}
+
+@media(max-width:480px) {
+  .header-container {
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .store-name {
+    font-family: HG正楷書体-PRO;
+    font-size: 24px;
+    margin-right: 0 0 0 30px;
+  }
+
+  /* ここからスマホ用メニュー開閉ボタン */
+  #menu{
+    display: block;
+    margin-right: 30px;
+    padding: 21px 0;
+    pointer-events: none; /*親要素でイベント(aタグのリンクを踏むこと)を受け取らない*/
+    z-index: 100;
+  }
+  
+  #menu .menuopen{
+    display: block;
+    pointer-events: auto; /*子要素でイベントを受け取り*/
+  }
+  
+  #menu .menuclose{
+    display: none;
+    pointer-events: auto; /*子要素でイベントを受け取り*/
+  }
+
+  .menuopen img, .menuclose img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #menu ul {
+    background: rgba(221, 221, 221, 0.7);
+    width: 100%;
+    display: none;
+  }
+  
+  #menu li{
+    padding: 5px;
+    border-bottom: 1px rgba(255,255,255,1) solid;
+    pointer-events: auto;
+  }
+
+  #menu li a {
+    color: black;
+    font-family: serif;
+  }
+  
+  /****メニューオープン時****/
+  #menu:target .menuopen{
+    display: none;
+  }
+  
+  #menu:target .menuclose{
+    display: block;
+  }
+  
+  #menu:target ul{
+    display: block;
+  }
+/*ここまで*/
+
+  .top-container {
+    margin: 0 auto;
+    background-image: url(photo/phone-top.png);
+    background-size:cover;
+    width: 100%;
+    height:741px;
+  }
+
+  .top-container h2 {
+    font-size: 28px;
+    margin: 40px 0 0 0;
+    display: inline-block;
+  }
+
+  .middle-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .middle-box1, .middle-box2, .middle-box3 {
+    width: 80%;
+  }
+  
+  .middle-box1 img,.middle-box2 img,.middle-box3 img {
+    width: 100%;
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .store-name2 {
+    margin: 3px;
+    padding: 3px;
+    font-size: 16px;
+  }
+
+  .footer-container a {
+    margin: 3px;
+    padding: 3px;
+    font-size: 12px;
+  }
+}

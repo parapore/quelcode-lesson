@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
+
+@media(max-width:480px) {
+
+  /*共通要素*/
+  body {
+    width: 375px;
+    background: #FFFFFF;
+    margin: 0 auto;
+  }
+
+  header {
+    height: 55px;
+  }
+
+  .header-container {
+    height: 55px;
+    background: #918F89;
+    opacity: 1;
+    position: static; /*position: fixedの解除 */
+  }
+
+  .header-container h1 {
+    margin: 11px 98.5px 0  153.5px;
+    width: 68px;
+    height: 40px;
+    color: #FFFFFF;
+  }
+
+  .about, .news, .question {
+    display: none;
+  }
+
+  #humberger {
+    margin: 14.33px 19px 0 0;
+    position: relative;
+    width: 36px;
+    height: 22px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  #humberger div {
+    position: absolute;
+    left: 0;
+    width: 36px;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: inline-block;
+  }
+
+  #humberger div:nth-of-type(1) {
+    top: 0;
+  }
+
+  #humberger div:nth-of-type(2) {
+    top: 10px;
+  }
+
+  #humberger div:nth-of-type(3) {
+    bottom: 0;
+  }
+
+  
+
+  .top-container {
+    height: 399px;
+    background: transparent url(suAdobeStock_255730246.png);
+  }
+
+  .top-container h2 {
+    padding: 56px 0 0 145px;
+    text-shadow: 9px 7px rgba(255, 255, 255, 0.1);
+  }
+
+  .top-container p {
+    display: none; /* テキストシャドウにしたので */
+  }
+
+  .query-container h2 {
+    margin: 80px auto 0 auto;
+    text-align: left;
+    }
+
+  .query-list {
+    
+    }
+
+    footer {
+     /* margin-top: 178px;*/
+      height: 276px;
+    }
+  
+    .footer-menu {
+      display: block; /* flex解除 */
+    }
+  
+    footer h2 {
+      width: 68px;
+      height: 40px;
+      margin: 0 auto 103px auto;
+      padding-top: 86px; /* margin-topだとfooterのmarginと重なってしまう */
+      font: 600 16px/16px Gill Sans;
+    }
+  
+    .footer-link {
+      display: none;
+    }
+  
+    footer p {
+      margin: 0 auto;
+      font: 300 10px/16px Gill Sans;
+    }
+  }

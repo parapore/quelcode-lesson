@@ -1,7 +1,11 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
 
+
+/*paddingとborderを幅と高さに含める*/
 * {
+	-webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -79,38 +83,104 @@ header {
 	padding: 186px 947px 200px 237px;
   width: 96px;
   height: 29px;
-  font: 200 30px/53px Noto Sans;
+  font: 200 30px/53px Noto Sans JP;
   letter-spacing: 3px;
-  color: #3B3B3B;
+	color: #3B3B3B;
+	opacity: 1;
 }
 
 .life-container {
-	text-align: center;
 	margin-bottom: 283px;
 }
 
 .life-container h2 {
-  margin:96px 0 70px 0;
+	margin:96px auto 70px auto;
+	width: 96px;
+	height: 29px;
+	text-align: left;
   font: 300 21px/53px DNPShueiMinPr6;
   letter-spacing: 2.1px;
   color: #3B3B3B;
   opacity: 1;
 }
 
+.product {
+	display: flex;
+}
+
+.product-phone {
+	display: none;
+}
+
 .product img {
 	width: 334px;
-  height: 387px;
+	height: 387px;
+	border: 0.800000011920929px solid #70707046;
 }
 
-.product .red{
-	margin: 0 50px 0 50px;
+.img1 {
+	margin: 0 0 0 89px;
+	position: relative;
 }
 
+.img2, .img3 {
+	margin: 0 0 0 50px;
+	position: relative;
+}
 
+.caption1, .caption2, .caption3{
+	text-align: center;
+	font: 300 16px/387px DNP ShueiGoKinStd;
+	letter-spacing: 0.36px;
+	color:white;
+	opacity: 1;
+	display: none; /* ホバーするまで非表示 */
+}
+
+ .mask1, .mask2, .mask3 {
+	text-align: center;
+	width: 100%;
+	height: 0%; /* ホバーするまで背景画像を消す */
+	position: absolute;
+	top: 387px; /* 下からせり上げる仕掛け */
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	-webkit-transition: all 0.6s ease;
+	-moz-transition:  all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.img1:hover .mask1 {
+	top: 0; /* topから387px→0pxで下からせり上がる */
+	height: 100%; /* ホバーで背景画像を表示 */
+}
+
+.img2:hover .mask2 {
+	top: 0;
+	height: 100%;
+}
+
+.img3:hover .mask3 {
+	top: 0;
+	height: 100%;
+}
+
+.img1:hover .caption1 {
+	display: block; /* ホバーでテキスト表示 */
+}
+
+.img2:hover .caption2 {
+	display: block;
+}
+
+.img3:hover .caption3 {
+	display: block;
+}
 
 footer {
 	margin-top: 221px;
-	width: 1280px;
 	height: 321px;
 	background: #918F89 0% 0% no-repeat padding-box;
 	opacity: 1;

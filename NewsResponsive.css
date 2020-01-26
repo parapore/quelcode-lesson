@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
+
+@media(max-width:480px) {
+
+  /*共通要素*/
+  body {
+    width: 375px;
+    background: #FFFFFF;
+    margin: 0 auto;
+  }
+
+  header {
+    height: 55px;
+  }
+
+  .header-container {
+    height: 55px;
+    background: #918F89;
+    opacity: 1;
+    position: static; /*position: fixedの解除 */
+  }
+
+  .header-container h1 {
+    margin: 11px 98.5px 0  153.5px;
+    width: 68px;
+    height: 40px;
+    color: #FFFFFF;
+  }
+
+  .about, .news, .question {
+    display: none;
+  }
+
+  #humberger {
+    margin: 14.33px 19px 0 0;
+    position: relative;
+    width: 36px;
+    height: 22px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  #humberger div {
+    position: absolute;
+    left: 0;
+    width: 36px;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: inline-block;
+  }
+
+  #humberger div:nth-of-type(1) {
+    top: 0;
+  }
+
+  #humberger div:nth-of-type(2) {
+    top: 10px;
+  }
+
+  #humberger div:nth-of-type(3) {
+    bottom: 0;
+  }
+
+  .top-container {
+    height: 399px;
+    background: transparent url(suAdobeStock_295587079.png);
+  }
+
+  .top-container h2 {
+    padding: 103px 0 0 135px;
+    text-shadow: 9px 7px rgba(0, 0, 0, 0.1);
+  }
+
+  .life-container {
+    margin: 80px auto 0 auto;
+  }
+
+  .life-container h2 {
+    display: none;
+  }
+
+  .product {
+    display: block; /*flex解除*/
+  }
+
+  .product-phone {
+    display: block;
+  }
+  
+  .product img, .product-phone img {
+    width: 286px;
+    height: 276px;
+    background: #72706A 0% 0% no-repeat padding-box;
+    border: 0.800000011920929px solid #70707033;
+    opacity: 0.6;
+  }
+
+  /* なぜかこっちも幅高さ指定しないと崩れる */
+  .img1, .img2, .img3 {
+    margin: 0 auto;
+    width: 286px;
+    height: 276px;
+  }
+
+  .img1 {
+    margin-top: 30px;
+  }
+
+  .img2 {
+    margin-top: 30px;
+  }
+
+  .img3 {
+    margin-top: 30px;
+  }
+
+  .caption1, .caption2, .caption3{
+    text-align: center;
+    font: 300 17px/276px DNPShueiMinPr6;
+    letter-spacing: -0.85px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 6px #000000E0;
+    opacity: 1;
+    display: block; /*ホバーしなくても表示 */
+  }
+
+  .mask1, .mask2, .mask3 {
+    height: 100%; /* ホバーしなくても背景画像を表示 */
+    top: 0; /* ホバーしなくても背景画像を表示 */
+  }
+
+  .product-phone p {
+    margin: 50px auto 0 auto;
+    text-align: center;
+    font: 200 21px/53px Noto Sans JP;
+    letter-spacing: 1.05px;
+    color: #3B3B3B;
+    opacity: 1;
+  }
+
+  .product-phone .arrow {
+    margin: 0 auto;
+    transform: matrix(1.5, 0, 0, 1, 0, 0);
+    width: 20px;
+    height: 39px;
+    text-align: center;
+    font: 1 19px/38px Ikono Demo L;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+  }
+
+  footer {
+    margin-top: 189px;
+    height: 276px;
+  }
+
+  .footer-menu {
+    display: block; /* flex解除 */
+  }
+
+  footer h2 {
+    width: 68px;
+    height: 40px;
+    margin: 0 auto 103px auto;
+    padding-top: 86px; /* margin-topだとfooterのmarginと重なってしまう */
+    font: 600 16px/16px Gill Sans;
+  }
+
+  .footer-link {
+    display: none;
+  }
+
+  footer p {
+    margin: 0 auto;
+    font: 300 10px/16px Gill Sans;
+  }
+}

@@ -1,8 +1,12 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
 
+
+/*paddingとborderを幅と高さに含める*/
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 a {
@@ -121,7 +125,7 @@ header {
 	opacity: 1;
 }
 
-.life-container .life-p {
+.life-p {
 	margin-top: 40px;
 	width: 474px;
 	height: 138px;
@@ -132,7 +136,7 @@ header {
 	opacity: 1;
 }
 
-.life-container .life-phone-p {
+.life-phone-p {
 	display: none;
 }
 
@@ -200,13 +204,11 @@ header {
 }
 
 .img1 {
-	height: 387px;
 	margin: 50px 0 0 89px;
 	position: relative;
 }
 
 .img2, .img3 {
-	height: 387px;
 	margin: 50px 0 0 50px;
 	position: relative;
 }
@@ -241,13 +243,13 @@ header {
 }
 
 .img2:hover .mask2 {
-	top: 0; /* ホバーで下からせり上がる */
-	height: 100%; /* ホバーで背景画像を表示 */
+	top: 0;
+	height: 100%;
 }
 
 .img3:hover .mask3 {
-	top: 0; /* ホバーで下からせり上がる */
-	height: 100%; /* ホバーで背景画像を表示 */
+	top: 0;
+	height: 100%;
 }
 
 .img1:hover .caption1 {
@@ -255,11 +257,11 @@ header {
 }
 
 .img2:hover .caption2 {
-	display: block; /* ホバーでテキスト表示 */
+	display: block;
 }
 
 .img3:hover .caption3 {
-	display: block; /* ホバーでテキスト表示 */
+	display: block;
 }
 
 .news-container p {
@@ -319,6 +321,8 @@ textarea {
 	border: 0.5px solid #707070;
 	border-radius: 11px;
 	opacity: 0.6;
+
+	/* font関連 */
 	text-align: left;
 	font: 300 12px/53px DNPShueiMinPr6;
 	letter-spacing: 0.6px;
@@ -345,10 +349,13 @@ input[type="submit"] {
 	opacity: 1;
 }
 
+.contact-phone {
+	display: none; /* デフォルト非表示 */
+}
+
 /* アセットの高さ指定が　284ｐｘと　416ｐｘの２つある？ 後で確認 */
 footer {
 	margin-top: 221px;
-	width: 1280px;
 	height: 284px;
 	background: #918F89 0% 0% no-repeat padding-box;
 	opacity: 1;
