@@ -25,6 +25,15 @@ header {
 	height: 60px;
 }
 
+.is-fixed {
+	/* ヘッダー固定。positionは高さ無くなるから親要素で高さ指定 */
+	position: fixed;
+	width: 1275px;
+	z-index: 2;
+	backdrop-filter: blur(3px);
+}
+
+
 .header-container {
   display: flex;
   
@@ -73,9 +82,41 @@ header {
   opacity: 0.5;
 }
 
+/* スマホ用メニュー */
+.phone-menu {
+	display: none;
+}
+
+.phone-ul {
+	width: 100%;
+	top:55px;
+	left:0;
+	list-style: none;
+	background: #918F89 0% 0% no-repeat padding-box;
+	opacity: 0.9;
+}
+
+.phone-ul li:nth-of-type(2) {
+	border: 0.5px solid #FFFFFF;
+	opacity: 1;
+}
+
+.phone-ul li {
+	height: 80px;
+	text-align: center;
+}
+
+.phone-ul li a {
+	display: block; /*ブロック要素にするとどこクリックしてもリンクになる*/
+	font: 300 23px/80px Noto Sans;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
 .top-container {
   height: 415px;
-  background: transparent url(AdobeStock_295587079.png);
+  background: transparent url(photo/AdobeStock_295587079.png);
   opacity: 1;
 }
 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="NewFile.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+  <title>HTML CSS</title>
+</head>
+<body>
+<div class="sample1">
+	<img src="AdobeStock_199226712.png" alt="フルーツ寄せ集め" />
+	<div class="mask">
+		<div class="caption">It's fresh !</div>
+  </div>
+</div>
+
+  <ul>
+    <li class="a">Yahoo! JAPAN</li>
+    </ul>
+
+    <div class="box">
+      <div class="in">
+        <p>aaa</p>
+      </div>
+    </div>
+
+    <div id="push">
+      <h3>push</h3>
+      <p class="hidden">abc</p>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+      'use strict';
+      
+      $(document).ready(function() {
+          $('#push h3').on('click', function() {
+              $(this).next().toggleClass('hidden');
+          });
+      });
+    </script>
+
+
+
+    <div class="btn-trigger" id="btn01">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+<div class="phone-menu">
+  <ul class="phone-ul">
+    <li>About</li>
+    <li>News</li>
+    <li>Q&A</li>
+  </ul>
+</div>
+
+<script>
+  'use strict';
+$(function(){
+  $('.btn-trigger').on('click', function() {
+    $(this).toggleClass('active');
+    return false;
+  });
+});
+</script>
+
+<script>
+  'use strict';
+  
+  $(document).ready(function() {
+      $('.btn-trigger').on('click', function() {
+          $(this).next().slideToggle();
+      });
+  });
+</script>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+  <h1>a</h1>
+
+/* スクロールするとh1に.scrollクラスを付けてアラートの後に赤色にする */
+<script>
+  'use strict';
+  $(function() {
+    $(window).on('load scroll', function() {
+    var value = $(this).scrollTop();
+    if ( value > 10 ) {
+      alert('アラート');
+      $('h1').addClass('scroll');
+    }
+  });
+});
+
+  console.log(windowPosition);
+  
+</script>
+
+
+</body>
+</html>

@@ -25,6 +25,15 @@ header {
 	height: 60px;
 }
 
+
+.is-fixed {
+	/* ヘッダー固定。positionは高さ無くなるから親要素で高さ指定 */
+	position: fixed;
+	width: 1275px;
+	backdrop-filter: blur(3px);
+	z-index: 10;
+}
+
 .header-container {
 	display: flex;
 	
@@ -72,9 +81,42 @@ header {
   opacity: 0.5;
 }
 
+/* スマホ用メニュー */
+.phone-menu {
+	display: none;
+}
+
+.phone-ul {
+	width: 100%;
+	top:55px;
+	left:0;
+	list-style: none;
+	background: #918F89 0% 0% no-repeat padding-box;
+	opacity: 0.9;
+}
+
+.phone-ul li:nth-of-type(2) {
+	border: 0.5px solid #FFFFFF;
+	opacity: 1;
+}
+
+.phone-ul li {
+	height: 80px;
+	text-align: center;
+}
+
+.phone-ul li a {
+	display: block; /*ブロック要素にするとどこクリックしてもリンクになる*/
+	font: 300 23px/80px Noto Sans;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+/* ページトップ */
 .top-container {
   height: 741px;
-  background: transparent url(AdobeStock_199226712.png);
+  background: transparent url(photo/AdobeStock_199226712.png);
   opacity: 1;
 }
 
@@ -103,6 +145,8 @@ header {
 	display: none;
 }
 
+
+/* 暮らしを提案する */
 .life-wrapper {
  display: flex;
 }
@@ -140,6 +184,8 @@ header {
 	display: none;
 }
 
+
+/* 豊富なスタイル */
 .style-wrapper h2 {
 	margin: 0 0 40px 543px;
 	width: 194px;
@@ -184,6 +230,8 @@ header {
 	background-color: rgba(165,165,165, 0.3);
 }
 
+
+/* News */
 .news-container h2 {
 	margin-top:210px;
 	text-align: center;
@@ -275,6 +323,8 @@ header {
 	opacity: 1;
 }
 
+
+/* Contact */
 .contact-container {
 	margin: 210px auto 0 auto;
 	text-align: center;
@@ -353,6 +403,7 @@ input[type="submit"] {
 	display: none; /* デフォルト非表示 */
 }
 
+/* footer */
 /* アセットの高さ指定が　284ｐｘと　416ｐｘの２つある？ 後で確認 */
 footer {
 	margin-top: 221px;
@@ -388,7 +439,6 @@ footer h2 {
 	color: #FFFFFF;
 	opacity: 1;
 	}
-
 
 .footer-about {
 	margin: 0 102px 0 0;

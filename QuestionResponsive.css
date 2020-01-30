@@ -15,6 +15,11 @@
     height: 55px;
   }
 
+  .is-fixed {
+    width: 373px;
+    opacity: 0.5;
+  }
+
   .header-container {
     height: 55px;
     background: #918F89;
@@ -33,41 +38,77 @@
     display: none;
   }
 
-  #humberger {
-    margin: 14.33px 19px 0 0;
-    position: relative;
-    width: 36px;
-    height: 22px;
-    display: inline-block;
-    box-sizing: border-box;
+/*=============================
+.btn-trigger
+=============================*/
+  .btn-trigger {
+  margin: 14.33px 19px 0 0;
+  position: relative;
+  width: 36px;
+  height: 22px;
+  cursor: pointer;
   }
-
-  #humberger div {
+  
+  .btn-trigger span {
     position: absolute;
     left: 0;
-    width: 36px;
+    width: 100%;
     height: 1px;
-    background-color: #FFFFFF;
-    display: inline-block;
+    background-color: rgb(255, 255, 255);
   }
 
-  #humberger div:nth-of-type(1) {
+  .btn-trigger, .btn-trigger span {
+    display: inline-block;
+    transition: all .5s;
+  }
+
+  .btn-trigger span:nth-of-type(1) {
     top: 0;
   }
 
-  #humberger div:nth-of-type(2) {
+  .btn-trigger span:nth-of-type(2) {
     top: 10px;
   }
-
-  #humberger div:nth-of-type(3) {
+  .btn-trigger span:nth-of-type(3) {
     bottom: 0;
   }
 
-  
+
+/*=============================
+#btn05
+=============================*/
+  #btn05.active span:nth-of-type(1) {
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    transform: translateY(20px) rotate(-45deg);
+  }
+
+  #btn05.active span:nth-of-type(2) {
+    left: 50%;
+    opacity: 0;
+    -webkit-animation: active-btn05-bar02 .8s forwards;
+    animation: active-btn05-bar02 .8s forwards;
+  }
+
+  @-webkit-keyframes active-btn05-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+
+  @keyframes active-btn05-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+
+  #btn05.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-3px) rotate(45deg);
+    transform: translateY(-3px) rotate(45deg);
+  }  
 
   .top-container {
     height: 399px;
-    background: transparent url(suAdobeStock_255730246.png);
+    background: transparent url(photo/suAdobeStock_255730246.png);
   }
 
   .top-container h2 {
@@ -85,32 +126,48 @@
     }
 
   .query-list {
-    
-    }
-
-    footer {
-     /* margin-top: 178px;*/
-      height: 276px;
-    }
-  
-    .footer-menu {
-      display: block; /* flex解除 */
-    }
-  
-    footer h2 {
-      width: 68px;
-      height: 40px;
-      margin: 0 auto 103px auto;
-      padding-top: 86px; /* margin-topだとfooterのmarginと重なってしまう */
-      font: 600 16px/16px Gill Sans;
-    }
-  
-    .footer-link {
-      display: none;
-    }
-  
-    footer p {
-      margin: 0 auto;
-      font: 300 10px/16px Gill Sans;
-    }
+      margin: 50px auto 0 auto;
+      width: 276px;
+      opacity: 1;
   }
+
+  .query1, .query2, .query3, .query4, .query5 {
+    text-align: left;
+    font: 300 13px/53px DNPShueiMinPr6;
+    letter-spacing: 1.3px;
+  }
+
+  .caption {
+    height: 30px;
+  }
+
+  .down {
+    padding-left: 32px;
+  }
+
+  footer {
+    /* margin-top: 178px;*/
+    height: 276px;
+  }
+  
+  .footer-menu {
+    display: block; /* flex解除 */
+  }
+  
+  footer h2 {
+    width: 68px;
+    height: 40px;
+    margin: 0 auto 103px auto;
+    padding-top: 86px; /* margin-topだとfooterのmarginと重なってしまう */
+    font: 600 16px/16px Gill Sans;
+  }
+  
+  .footer-link {
+    display: none;
+  }
+  
+  footer p {
+    margin: 0 auto;
+    font: 300 10px/16px Gill Sans;
+  }
+}
